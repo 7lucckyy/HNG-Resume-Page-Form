@@ -5,7 +5,7 @@ const validator = require('validator')
 const nodemailer = require('nodemailer')
 const morgan = require('morgan')
 
-const PORT = 3000
+const PORT = process.env.PORT || 3000
 
 const app = express();
 
